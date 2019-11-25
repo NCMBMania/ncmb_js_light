@@ -7,16 +7,16 @@
     "build": "browserify -g uglifyify -o ncmb.min.js index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Atsushi <atsushi@moongift.jp>",
   "license": "MIT",
   "dependencies": {
-    "browserify": "^16.5.0",
     "crypto-js": "^3.1.9-1",
-    "node-fetch": "^2.6.0",
-    "uglify-js": "^3.6.9",
-    "uglifyify": "^5.0.2"
+    "node-fetch": "^2.6.0"
   },
   "devDependencies": {
-    "dotenv": "^8.2.0"
+    "browserify": "^16.5.0",
+    "dotenv": "^8.2.0",
+    "uglify-js": "^3.6.9",
+    "uglifyify": "^5.0.2"
   }
 }
