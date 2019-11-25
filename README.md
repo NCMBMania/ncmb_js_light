@@ -61,10 +61,29 @@ const ncmb = new NcmbDS(applicationKey, clientKey);
 ]
 ```
 
+## データ保存
+
+```javascript
+const hello = ncmb.Object('Hello');
+await hello
+  .set('text', 'hello, world!')
+  .save();
+console.log(hello);
+```
+
+## データ更新
+
+```javascript
+await hello
+  .set('text2', 'new text')
+  .save();
+console.log(hello);
+```
+
 ## サイズ
 
 - 標準のJavaScript SDK -> 1,033,919バイト（約1MB）
-- 軽量版 -> 10,701バイト（約10KB）
+- 軽量版 -> 12,196バイト（約11KB）
 
 ## ライセンス
 
